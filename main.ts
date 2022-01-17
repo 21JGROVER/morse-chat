@@ -24,5 +24,5 @@ input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
     radio.sendNumber(0)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    radio.sendNumber(0)
+    radio.sendNumber(1)
 })
