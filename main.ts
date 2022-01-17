@@ -21,8 +21,11 @@ radio.onReceivedNumber(function (receivedNumber) {
     basic.clearScreen()
 })
 input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
-    radio.sendNumber(100)
+	
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+input.onButtonPressed(Button.A, function () {
     radio.sendNumber(1)
+})
+input.onButtonPressed(Button.B, function () {
+    radio.sendNumber(100)
 })
