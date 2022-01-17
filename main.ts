@@ -1,5 +1,5 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    if (receivedNumber == 0) {
+    if (receivedNumber == 100) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -21,7 +21,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     basic.clearScreen()
 })
 input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
-    radio.sendNumber(0)
+    radio.sendNumber(100)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     radio.sendNumber(1)
